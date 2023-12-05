@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+        background-color: #111;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .profile {
+        display: inline-block;
+        height: 300px;
+        width: 300px;
+        transition: transform 0.3s ease-in-out;
+        animation: bounce 1.5s infinite alternate;
+      }
+
+      .profile img {
+        height: 300px;
+        width: 300px;
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      .profile:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile">
+      <img src="./images/profile-image.png" alt="My Profile Picture" />
+    </div>
+  </body>
+</html>

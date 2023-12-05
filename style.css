@@ -1,6 +1,11 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
 * {
   padding: 0;
   margin: 0;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -29,7 +34,7 @@ header > section h2 {
   width: 100%;
   list-style-type: none;
   /* background-color: wheat; */
-  font-size: 1.5rem;
+  font-size: 1rem !important;
   /* margin-left: 3%;
   margin-top: 2%; */
   display: none;
@@ -50,6 +55,9 @@ header > section h2 {
   font-size: 1.2rem;
 }
 
+.header h2 {
+  font-weight: 900;
+}
 a {
   text-decoration: none;
 }
@@ -84,7 +92,7 @@ a {
     /* margin-left: 8%; */
     justify-content: center;
     margin-top: 1%;
-    font-size: 1.4rem;
+    font-size: 1.3rem !important;
   }
 }
 
@@ -100,7 +108,7 @@ a {
     gap: 30px;
     justify-content: center;
     margin-top: 1%;
-    font-size: 1.5rem;
+    font-size: 1.3rem !important;
   }
 }
 
@@ -124,54 +132,90 @@ a {
 }
 
 .intro {
-  background-color: blue;
   /* background-color: blue; */
-  height: 90vh;
+  height: 80vh;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
+  padding: 5%;
 }
 
-.intro div {
-  padding-bottom: 17vh;
-  margin-left: 2%;
+.intro span {
+  color: #ffbd39;
+  display: inline-block;
+  animation: bounce 1.5s infinite alternate;
+  background-color: 0;
 }
 .intro p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .intro h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .intro h3 {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 
-.intro img {
-  height: 57%;
+#intro {
+  margin-left: 10%;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.profile {
+  display: none;
 }
 
 @media (min-width: 573px) and (max-width: 640px) {
-  .intro img {
-    height: 67%;
+  #intro {
+    margin-left: 10%;
+  }
+
+  .intro p {
+    font-size: 1.8rem;
+  }
+
+  .intro h1 {
+    font-size: 3rem;
+  }
+
+  .intro h3 {
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 641px) and (max-width: 750px) {
-  .intro img {
-    height: 77%;
+  #intro {
+    margin-left: 10%;
+  }
+
+  .intro p {
+    font-size: 2rem;
+  }
+
+  .intro h1 {
+    font-size: 3.3rem;
+  }
+
+  .intro h3 {
+    font-size: 2.2rem;
   }
 }
 
 @media (min-width: 751px) and (max-width: 987px) {
-  .intro img {
-    height: 80%;
-  }
-
   .intro p {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .intro h1 {
@@ -179,19 +223,97 @@ a {
   }
 
   .intro h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
+  }
+
+  #intro {
+    margin-left: 10%;
+  }
+
+  .profile {
+    display: contents;
+    display: inline-block;
+    margin-right: 5%;
+    height: 300px;
+    width: 300px;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 1.5s infinite alternate;
+    border-radius: 2rem;
+  }
+
+  .profile img {
+    height: 300px;
+    border-radius: 2rem;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
   }
 }
 
-@media screen and (min-width: 988px) {
-  .intro {
-    justify-content: space-around;
-    width: 100%;
-  }
-  .intro img {
-    height: 80%;
+@media (min-width: 988px) and (max-width: 1307px) {
+  .intro p {
+    font-size: 1.5rem;
   }
 
+  .intro h1 {
+    font-size: 2.8rem;
+  }
+
+  .intro h3 {
+    font-size: 1.7rem;
+  }
+
+  #intro {
+    margin-left: 10%;
+  }
+
+  .profile {
+    display: contents;
+    display: inline-block;
+    margin-right: 10%;
+    height: 400px;
+    width: 400px;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 1.5s infinite alternate;
+    border-radius: 2rem;
+  }
+
+  .profile img {
+    height: 400px;
+    border-radius: 2rem;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
+  }
+
+  header .fa-solid {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 1308px) {
   .intro p {
     font-size: 2rem;
   }
@@ -201,7 +323,43 @@ a {
   }
 
   .intro h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+  }
+
+  #intro {
+    margin-left: 15%;
+    margin-bottom: 10%;
+  }
+
+  .profile {
+    display: contents;
+    display: inline-block;
+    margin-right: 20%;
+    padding-bottom: 20px;
+    height: 600px;
+    width: 600px;
+    transition: transform 0.3s ease-in-out;
+    animation: bounce 1.5s infinite alternate;
+    border-radius: 2rem;
+  }
+
+  .profile img {
+    height: 600px;
+    border-radius: 2rem;
+  }
+
+  @keyframes bounce {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .profile:hover {
+    transform: scale(1.1);
   }
 
   header .fa-solid {
@@ -219,15 +377,29 @@ a {
 .about h2 {
   font-size: 2.2rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .about p {
   padding-top: 1rem;
-  padding-right: 2%;
+  padding-left: 10%;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  width: 80%;
 }
 
 .img-container {
-  display: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.img-container img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
 }
 
 @media (min-width: 570px) and (max-width: 610px) {
@@ -238,10 +410,6 @@ a {
 
   .about h2 {
     font-size: 2.5rem;
-  }
-
-  .about p {
-    font-size: 1.1rem;
   }
 }
 
@@ -256,16 +424,11 @@ a {
   }
 
   .about p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 751px) and (max-width: 987px) {
-  .about {
-    margin-left: 15%;
-    margin-right: 15%;
-  }
-
   .about h2 {
     font-size: 2.5rem;
     padding-top: 2rem;
@@ -275,44 +438,43 @@ a {
     font-size: 1.2rem;
   }
 
-  img-container {
-    display: contents;
+  .img-container {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
   .img-container img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    margin-left: 25%;
   }
 }
 
 @media screen and (min-width: 988px) {
   .about {
-    width: 80%;
-    margin-left: 10%;
+    margin-top: 2rem;
   }
-
   .about h2 {
-    font-size: 3rem;
-    padding-top: 2rem;
+    font-size: 2.5rem;
+    padding-top: 1.2rem;
   }
 
   .about p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    width: 60%;
+    margin-left: 10%;
   }
 
   .img-container {
-    display: contents;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
   .img-container img {
-    height: 300px;
-    width: 300px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
   }
 }
@@ -327,10 +489,12 @@ a {
   text-align: center;
   font-size: 2.2rem;
   padding-bottom: 1rem;
+  padding-top: 2rem;
 }
 
 .skills .des {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: #999999;
   text-align: center;
   margin-bottom: 3rem;
 }
@@ -351,7 +515,7 @@ a {
 }
 
 .bar {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .ms-office {
@@ -473,7 +637,7 @@ a {
   }
 
   .skills .des {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -506,7 +670,7 @@ a {
   }
 
   .skills .des {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -517,18 +681,28 @@ a {
   padding-bottom: 2rem;
 }
 
+.project-des {
+  font-size: 1rem;
+  color: #999999;
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 90%;
+  margin-left: 5%;
+}
+
 .container1 {
   height: 450px;
   width: 80%;
-  border: 2px solid black;
+  border: 2px solid white !important;
   margin-left: 10%;
   margin-bottom: 2rem;
 }
 
 .projects h2 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 2.2rem;
   padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 
 .img-frame {
@@ -536,7 +710,7 @@ a {
   margin-left: 5%;
   height: 50%;
   margin-top: 2rem;
-  border: 2px solid black;
+  border: 2px solid white;
 }
 
 .img-frame img {
@@ -546,6 +720,7 @@ a {
 .container1 h4 {
   padding-left: 5%;
   margin-top: 0.5rem;
+  color: #ffbd39;
 }
 
 .container1 h3 {
@@ -554,14 +729,14 @@ a {
 }
 
 .container1 p {
-  font-size: 1rem;
+  font-size: 0.71rem !important;
   padding-left: 5%;
   padding-top: 0.5rem;
 }
 
 @media (min-width: 670px) and (max-width: 767px) {
   .container1 p {
-    font-size: 1.2rem;
+    font-size: 0.8rem !important;
     padding-left: 5%;
     padding-top: 0.5rem;
   }
@@ -592,10 +767,14 @@ a {
   }
 
   .container1 p {
-    font-size: 1.05rem;
+    font-size: 0.8rem !important;
     padding-left: 5%;
     padding-top: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .project-des {
+    font-size: 1.1rem;
   }
 }
 
@@ -619,10 +798,14 @@ a {
   }
 
   .container1 p {
-    font-size: 1.05rem;
+    font-size: 0.85rem !important;
     padding-left: 5%;
     padding-top: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .project-des {
+    font-size: 1.2rem;
   }
 }
 
@@ -646,10 +829,14 @@ a {
   }
 
   .container1 p {
-    font-size: 1.05rem;
+    font-size: 0.8rem !important;
     padding-left: 5%;
     padding-top: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .project-des {
+    font-size: 1.2rem;
   }
 }
 
@@ -662,7 +849,7 @@ a {
     padding-top: 2rem;
     padding-bottom: 2rem;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 8%;
   }
 
   .container1 {
@@ -674,9 +861,15 @@ a {
   }
 
   .container1 p {
-    font-size: 1.2rem;
+    font-size: 0.9rem !important;
     padding-left: 5%;
     padding-top: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  .project-des {
+    font-size: 1.2rem;
+    width: 60%;
+    padding-left: 15%;
   }
 }
