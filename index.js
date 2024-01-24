@@ -1,6 +1,10 @@
 const icon = document.querySelector(".fa-bars");
-
 const navlist = document.querySelector("#navlist");
+const copyright = document.querySelector(".copyright");
+
+const today = new Date();
+const year = today.getFullYear();
+copyright.innerHTML = `<p>&copy; ${year} Jamal Salim</p>`;
 
 icon.addEventListener("click", () => {
   if (navlist.style.display === "none" || navlist.style.display === "") {

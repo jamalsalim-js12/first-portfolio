@@ -34,6 +34,7 @@ nav {
   align-items: center;
   width: 95%;
   margin-left: 2.5%;
+  background-color: #000000;
 }
 
 header h2 {
@@ -70,6 +71,7 @@ nav ul {
   gap: 20px;
   list-style-type: none;
   display: none;
+  margin: 0;
 }
 
 @media (min-width: 570px) and (max-width: 610px) {
@@ -1097,6 +1099,7 @@ nav ul {
 .contact {
   width: 100vw;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 .contact h2 {
@@ -1376,5 +1379,119 @@ textarea {
     border: 0.5px solid gray;
     border-radius: 5px;
     font-size: 1.2rem;
+  }
+}
+
+footer {
+  width: 100vw;
+  /* height: 15vh; */
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid lightgray;
+}
+
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+  margin-bottom: 1.8rem;
+  margin-top: 2rem;
+}
+
+.nav {
+  margin-bottom: 1rem;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  font-size: 1rem;
+}
+
+@media (min-width: 611px) and (max-width: 987px) {
+  footer {
+    width: 100vw;
+    /* height: 15vh; */
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+  }
+
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  .nav {
+    margin-bottom: 1rem;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+
+
+
+@media screen and (min-width: 988px) {
+  footer {
+    width: 100vw;
+    /* height: 15vh; */
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid lightgray;
+  }
+
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  .nav {
+    margin-bottom: 1rem;
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.4rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
   }
 }
