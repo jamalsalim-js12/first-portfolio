@@ -1,58 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <script
-      src="https://kit.fontawesome.com/5d630394f0.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="./index.js"></script>
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <!-- Header -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://kit.fontawesome.com/5d630394f0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="./app.js" defer></script>
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <main>
     <header>
-      <section>
+      <nav>
         <h2>Portfolio</h2>
         <i class="fa-solid fa-bars fa-2xl"></i>
-        <ul id="navlist">
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./public/about.html"><li>About</li></a>
-          <a href="./public/skills.html"><li>Skills</li></a>
-          <a href="./public/projects.html"><li>Projects</li></a>
-          <a href="#"><li>Contact</li></a>
+        <ul>
+          <a href="#intro">
+            <li>Home</li>
+          </a>
+          <a href="#about">
+            <li>About</li>
+          </a>
+          <a href="#skills">
+            <li>Skills</li>
+          </a>
+          <a href="#projects">
+            <li>Projects</li>
+          </a>
+          <a href="#contact">
+            <li>Contact</li>
+          </a>
         </ul>
-      </section>
-      <div class="navlist">
-        <ul id="navlist1">
-          <a href="./index.html"><li>Home</li></a>
-          <a href="./public/about.html"><li>About</li></a>
-          <a href="./public/skills.html"><li>Skills</li></a>
-          <a href="./public/projects.html"><li>Projects</li></a>
-          <a href="./public/contact.html"><li>Contact</li></a>
-        </ul>
-      </div>
+      </nav>
+      <ul id="navlist">
+        <a href="#intro">
+          <li>Home</li>
+        </a>
+        <a href="#about">
+          <li>About</li>
+        </a>
+        <a href="#skills">
+          <li>Skills</li>
+        </a>
+        <a href="#projects">
+          <li>Projects</li>
+        </a>
+        <a href="#contact">
+          <li>Contact</li>
+        </a>
+      </ul>
     </header>
-    <!-- Home or Intro -->
-    <section class="intro">
-      <div id="intro">
+    <section id="intro">
+      <div id="intro1">
         <p>Hello,</p>
         <h1>I'm <span>Jamal Salim</span></h1>
-        <h3>A <span>Web Developer</span></h3>
+        <h3>A <span class="auto-type"></span></h3>
         <p>From Ghana</p>
         <div class="buttons">
-          <button type="button">HIRE ME</button>
+          <button type="button"><a href="./assets/documents/My C.V.pdf" target="_blank">HIRE ME</a></button>
           <button type="button">
-            <a href="./public/projects.html">MY WORKS</a>
+            <a href="#projects">MY WORKS</a>
           </button>
         </div>
       </div>
       <div class="profile">
-        <img src="./images/myprofilepic.jpeg" alt="My Profile Picture" />
+        <img src="./assets/images/myprofilepic.jpeg" alt="My Profile Picture" />
       </div>
     </section>
-  </body>
+    <section id="about">
+      <div class="img-container">
+        <img src="./assets/images/myprofilepic.jpeg" alt="My Picture" />
+      </div>
+      <h2>ABOUT ME</h2>
+      <p>
+        I am a passionate and driven beginning software developer with a
+        relentless curiosity for technology and a fervor for problem-solving. My
+        journey into the world of software development began with a deep
+        fascination for how computers and software applications work together to
+        create the digital world we inhabit. This intrigue has fueled my
+        determination to embark on a career in software development and has led
+        me to explore various programming languages and frameworks. I thrive on
+        the challenge of turning complex ideas into elegant, functional code and
+        am excited about the limitless possibilities that this field offers.
+        <br />
+        <br />
+        As a beginner in the field, I have invested substantial time in honing
+        my programming skills, and I am continuously expanding my knowledge
+        base. My dedication to learning is complemented by my ability to work
+        effectively in a team, communicate ideas clearly, and adapt to new
+        technologies and methodologies as the field evolves.
+        <br />
+        <br />
+        Beyond coding, I am also committed to embracing best practices in
+        software development, such as version control, testing, and agile
+        methodologies. I am eager to contribute my skills to projects that make
+        a positive impact on society, and I believe that software development
+        provides an avenue to address various challenges facing our world today.
+        As I continue to grow in this dynamic field, my goal is to become a
+        well-rounded developer capable of creating innovative solutions that
+        improve user experiences and make a difference in the digital landscape.
+      </p>
+    </section>
+    <section class="skills" id="skills">
+      <h2>MY SKILLS</h2>
+      <p class="des">
+        As a passionate and versatile professional, I bring a diverse set of
+        skills to the table, <br />
+        combining technical expertise with valuable soft skills. Here's a
+        glimpse into my capabilities:
+      </p>
+      <div class="wrapper">
+        <div class="skills-list">
+          <!-- Microsoft Office -->
+          <div class="set">
+            <p class="topic">Microsoft Office</p>
+            <div class="container">
+              <div class="bar ms-office">80%</div>
+            </div>
+          </div>
+
+          <div class="set">
+            <!-- Python -->
+            <p class="topic">Python</p>
+            <div class="container">
+              <div class="bar python">35%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="set">
+            <!-- HTML -->
+            <p class="topic">HTML</p>
+            <div class="container">
+              <div class="bar html">75%</div>
+            </div>
+          </div>
+
+          <div class="set">
+            <!-- CSS -->
+            <p class="topic">CSS</p>
+            <div class="container">
+              <div class="bar css">55%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="set">
+            <!-- Javascript -->
+            <p class="topic">Javascript</p>
+            <div class="container">
+              <div class="bar js">45%</div>
+            </div>
+          </div>
+
+          <div class="set">
+            <!-- jQuery -->
+            <p class="topic">jQuery</p>
+            <div class="container">
+              <div class="bar jquery">30%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="set">
+            <!-- Node -->
+            <p class="topic">Node</p>
+            <div class="container">
+              <div class="bar node">50%</div>
+            </div>
+          </div>
+
+          <div class="set">
+            <!-- Express -->
+            <p class="topic">Express</p>
+            <div class="container">
+              <div class="bar express">60%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="set">
+            <!-- EJS -->
+            <p class="topic">EJS</p>
+            <div class="container">
+              <div class="bar ejs">45%</div>
+            </div>
+          </div>
+
+          <div class="set">
+            <!-- API -->
+            <p class="topic">API</p>
+            <div class="container">
+              <div class="bar api">40%</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="set">
+            <!-- MySQL -->
+            <p class="topic">MySQL</p>
+            <div class="container">
+              <div class="bar mysql">60%</div>
+            </div>
+          </div>
+
+          <div class="set">
+            <!-- PostgreSQL -->
+            <p class="topic">PostgreSQL</p>
+            <div class="container">
+              <div class="bar postgres">55%</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>MY PROJECTS</h2>
+      <p class="project-des">
+        As a passionate beginner in web development, I've embarked on a journey
+        to build and showcase various projects that reflect my evolving skills.
+        Each project represents a step forward in my learning process, and I'm
+        excited to share them with you. Explore the world of coding through my
+        projects, where creativity meets functionality. Stay tuned for more
+        exciting endeavors!
+      </p>
+      <div class="project-container">
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Google-SignIn.png" alt="Google Sign In Page" />
+          </div>
+          <h4>HTML | CSS</h4>
+          <h3> <a href="https://gmail-signin.netlify.app" target="_blank">Google SignIn Page</a></h3>
+          <p>
+            This project is a faithful reproduction of the Google sign-in page,
+            crafted with HTML and CSS. The design captures the essence of
+            Google's clean and intuitive user interface.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Age Calculator.png" alt="Age Calculator" />
+          </div>
+          <h4>HTML | CSS | JS</h4>
+          <h3><a href="https://age-calculator-12.netlify.app/" target="_blank">Age Calculator</a></h3>
+          <p>
+            Explore my user-friendly age calculator website. Effortlessly determine your age or the age difference
+            between two dates with just a few clicks. Enjoy a clean and intuitive interface, making age calculations a
+            breeze.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Currency Convertor.png" alt="Currency Convertor" />
+          </div>
+          <h4>HTML | CSS | JS</h4>
+          <h3><a href="https://currency-convertor12.netlify.app/" target="_blank">Currency Convertor</a></h3>
+          <p>
+            This Currency Converter is a web application that allows users to convert currency values easily. Simply
+            enter the amount, select the source currency, choose the target currency, and click "Convert Currency."
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Pixels EM Convertor.png" alt="Pixels Convertor" />
+          </div>
+          <h4>HTML | CSS | JS</h4>
+          <h3><a href="https://px-em-convertor.netlify.app" target="_blank">Pixels Convertor</a></h3>
+          <p>
+            The Pixel-EM Converter is a simple web tool that helps you convert pixel values to em values and vice versa.
+            It provides a user-friendly interface to perform quick conversions based on a specified base pixel size.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Random Quotes Generator.png" alt="Quotes Generator" />
+          </div>
+          <h4>HTML | CSS | JS</h4>
+          <h3><a href="https://randomquotes-generator-12.netlify.app" target="_blank">Random Quotes Generator</a></h3>
+          <p>
+            This is a simple web application that generates random quotes along with their authors. The application uses
+            the Quotable API to fetch random quotes dynamically.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Starbucks Clone.png" alt="Starbucks Clone" />
+          </div>
+          <h4>HTML | CSS</h4>
+          <h3><a href="https://starbucks-clone12.netlify.app" target="_blank">Starbucks Landing Page Clone</a></h3>
+          <p>
+            Check out this Starbucks landing page clone!. Experience the familiar
+            vibes of Starbucks in this simple yet stylish web page. It's a testament to the creative possibilities using
+            only HTML and CSS.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/New Year Countdown.png" alt="New Year Countdown" />
+          </div>
+          <h4>HTML | CSS | JS</h4>
+          <h3><a href="https://newyearcountdown-12.netlify.app" target="_blank">New Year Countdown</a></h3>
+          <p>
+            This project displays a countdown timer to the New Year, providing a visually appealing and interactive way
+            to anticipate the upcoming year. It's a fun and engaging addition to your New Year's celebrations.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/Tip Calculator.png" alt="Tip Calculator" />
+          </div>
+          <h4>HTML | CSS | JS</h4>
+          <h3><a href="https://tipcalculator-12.netlify.app" target="_blank">Tip Calculator</a></h3>
+          <p>
+            A simple yet efficient Tip Calculator to quickly determine the total bill amount based on the entered bill
+            amount and tip percentage.
+          </p>
+        </div>
+
+        <div class="container1">
+          <div class="img-frame">
+            <img src="./assets/projects/To-Do List.png" alt="To-Do List" />
+          </div>
+          <h4>EJS | JS | NODE.JS</h4>
+          <h3>Lorem</h3>
+          <p>
+            Boost your efficiency with this ToDo list made using Node.js and EJS. Stay organized and on top of your
+            tasks effortlessly. Streamlined productivity at its best!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>CONTACT ME</h2>
+      <div id="grid">
+        <div class="contact-img">
+          <img src="./assets/images/myprofilepic.jpeg" alt="My Picture" />
+        </div>
+        <form class="form">
+          <input type="text" name="name" id="name" placeholder="Your Name" />
+          <br />
+          <input type="email" name="email" id="email" placeholder="Your Email" />
+          <br />
+          <input type="text" name="subject" id="subject" placeholder="Subject" />
+          <br />
+          <textarea name="message" id="message" placeholder="Message"></textarea>
+          <br />
+          <input type="submit" value="SEND MESSAGE" id="send" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+
+    </footer>
+  </main>
+
+</body>
+
 </html>
