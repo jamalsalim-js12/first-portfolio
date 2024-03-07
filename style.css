@@ -197,6 +197,9 @@ nav ul {
   margin-top: 2rem;
 }
 
+
+
+
 .buttons button {
   width: 35%;
   height: 3.5rem;
@@ -751,7 +754,7 @@ nav ul {
 .api {
   background-color: #ffbd39;
   border-radius: 5px;
-  width: 40%;
+  width: 50%;
   text-align: end;
 }
 
@@ -765,7 +768,21 @@ nav ul {
 .postgres {
   background-color: #ffbd39;
   border-radius: 5px;
+  width: 70%;
+  text-align: end;
+}
+
+.react {
+  background-color: #ffbd39;
+  border-radius: 5px;
   width: 55%;
+  text-align: end;
+}
+
+.vue {
+  background-color: #ffbd39;
+  border-radius: 5px;
+  width: 40%;
   text-align: end;
 }
 
@@ -1059,9 +1076,6 @@ nav ul {
 }
 
 @media screen and (min-width: 1582px) {
-  .projects {
-    /* margin-top: 2%; */
-  }
 
   .project-container {
     /* background-color: blue; */
